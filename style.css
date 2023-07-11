@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
+
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    font-family: 'IM Fell Double Pica SC', serif;
+    background-color: rgb(53, 23, 93);
+    margin: 0;
+    padding: 0.3vh;
+    font-weight: 200;
+}
+
+
+#headingContainer {
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 4vw;
+    text-align: center;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.infoBoxesContainer {
+    display: none;
+}
+
+#infoBoxesContainer {
+    width: 100%;
+    padding-top: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-boxes {
+    border: 3px dashed rgb(53, 23, 93);
+    width: 25%;
+    height: 30%;
+    margin: 2vh;
+}
+
+.box-title {
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Charis SIL', serif;
+}
+
+.result-text {
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Charis SIL', serif;
+    font-weight: 700;
+}
+
+footer {
+    background-color: rgb(53, 23, 93);
+    margin: 0;
+    padding: 1vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+
+@media all and (max-width:800px) {
+    #infoBoxesContainer {
+        flex-direction: column;
+    }
+    .info-boxes {
+        width: 35vw;
+        height: 15vh;
+        margin: 2vh;
+    }
+    .box-title {
+        font-size: 2vw;
+    }
+    
+    .result-text {
+        font-size: 3vw;
+    }
+}
+
+
+@media all and (max-width:500px) {
+    header {
+        font-size: 2vh;
+    }
+    #infoBoxesContainer {
+        flex-direction: column;
+    }
+    .info-boxes {
+        width: 40vw;
+        height: 20vh;
+        margin: 2vh;
+    }
+    .box-title {
+        font-size: 4vw;
+    }
+    
+    .result-text {
+        font-size: 5vw;
+    }
+}

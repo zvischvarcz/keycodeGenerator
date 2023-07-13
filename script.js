@@ -1,10 +1,10 @@
-const infoBox1 = document.getElementById("infoBox1")
-const infoBox2 = document.getElementById("infoBox2")
-const infoBox3 = document.getElementById("infoBox3")
-const headingContainer = document.getElementById("headingContainer")
-const infoBoxesContainer = document.getElementById("infoBoxesContainer")
-const input = document.getElementById("input")
-const inputBtn = document.getElementById("inputBtn")
+const infoBox1 = document.getElementById("infoBox1");
+const infoBox2 = document.getElementById("infoBox2");
+const infoBox3 = document.getElementById("infoBox3");
+const headingContainer = document.getElementById("headingContainer");
+const infoBoxesContainer = document.getElementById("infoBoxesContainer");
+const input = document.getElementById("input");
+const inputBtn = document.getElementById("inputBtn");
 
 
 
@@ -25,9 +25,10 @@ document.addEventListener("keypress", (event) => {
 })
 
 inputBtn.addEventListener("click", () => {
-    let keycode = input.value.code;
-    let keyCodeKey = input.value.key;
-    let keyCodeCharCode = input.value.charCode;
+    let inputValue = input.value;
+    let keycode = inputValue.code;
+    let keyCodeKey = inputValue;
+    let keyCodeCharCode = inputValue.charCodeAt(0);
     headingContainer.style.display = "none";
     infoBoxesContainer.style.display = "flex";
     infoBox1.innerHTML = `<P class="box-title">The event.code is:</p><p class="result-text">${keycode}</p>`

@@ -71,6 +71,10 @@ footer {
     color: white;
 }
 
+.input-wrap {
+    display: none;
+}
+
 
 @media all and (max-width:800px) {
     #infoBoxesContainer {
@@ -95,19 +99,43 @@ footer {
     header {
         font-size: 2vh;
     }
+    h1 {
+        font-size: 14vw;
+    }
+
+    h3 {
+        font-size: 12vw;
+    }
     #infoBoxesContainer {
+        margin-top: 0;
+        padding-top: 2vh;
         flex-direction: column;
     }
     .info-boxes {
         width: 40vw;
         height: 20vh;
-        margin: 2vh;
+        margin: 0.5vh;
     }
     .box-title {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     
     .result-text {
-        font-size: 5vw;
+        font-size: 5.5vw;
+    }
+
+    .input-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+    input {
+        margin-right: 1vw;
+    }
+
+    button {
+        background-color: rgb(53, 23, 93);
+        border: none;
+        color: white;
     }
 }

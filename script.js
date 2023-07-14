@@ -24,7 +24,7 @@ document.addEventListener("keypress", (event) => {
     infoBox3.innerHTML = `<P class="box-title">The event.charCode is:</p><p class="result-text">${keyCodeCharCode}</p>`
 })
 
-input.addEventListener("keypress", (event) => {
+input.addEventListener("keydown", (event) => {
     let keycode = event.code;
     let keyCodeKey = event.key;
     let keyCodeCharCode = event.charCode;

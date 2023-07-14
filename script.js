@@ -7,12 +7,6 @@ const input = document.getElementById("input");
 const inputBtn = document.getElementById("inputBtn");
 
 
-
-
-
-
-
-
 document.addEventListener("keypress", (event) => {
     let keycode = event.code;
     let keyCodeKey = event.key;

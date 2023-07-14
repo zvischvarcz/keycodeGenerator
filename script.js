@@ -21,7 +21,7 @@ document.addEventListener("keypress", (event) => {
 input.addEventListener("keydown", (event) => {
     let keycode = event.code;
     let keyCodeKey = event.key;
-    let keyCodeCharCode = event.charCode;
+    let keyCodeCharCode = event.which;
     headingContainer.style.display = "none";
     infoBoxesContainer.style.display = "flex";
     infoBox1.innerHTML = `<P class="box-title">The event.code is:</p><p class="result-text">${keycode}</p>`

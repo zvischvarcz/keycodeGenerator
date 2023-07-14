@@ -24,14 +24,14 @@ document.addEventListener("keypress", (event) => {
     infoBox3.innerHTML = `<P class="box-title">The event.charCode is:</p><p class="result-text">${keyCodeCharCode}</p>`
 })
 
-inputBtn.addEventListener("click", () => {
-    let inputValue = input.value;
-    let keycode = inputValue.code;
-    let keyCodeKey = inputValue;
-    let keyCodeCharCode = inputValue.charCodeAt(0);
+input.addEventListener("keypress", (event) => {
+    let keycode = event.code;
+    let keyCodeKey = event.key;
+    let keyCodeCharCode = event.charCode;
     headingContainer.style.display = "none";
     infoBoxesContainer.style.display = "flex";
     infoBox1.innerHTML = `<P class="box-title">The event.code is:</p><p class="result-text">${keycode}</p>`
     infoBox2.innerHTML = `<P class="box-title">The event.key is:</p><p class="result-text">${keyCodeKey}</p>`
     infoBox3.innerHTML = `<P class="box-title">The event.charCode is:</p><p class="result-text">${keyCodeCharCode}</p>`
+    input.value = ""
 })
